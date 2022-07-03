@@ -1,14 +1,13 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <Head>
-        <title>Blog</title>
-      </Head>
-      <h1>Blog</h1>
-    </div>
+    <h1 className="title">
+      <Link href="/posts/first-post">
+        <a>First post</a>
+      </Link>
+    </h1>
   )
 }
 
